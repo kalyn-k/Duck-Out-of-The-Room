@@ -6,4 +6,4 @@
 **Last Edited: April 24, 2022**
 
 # Purpose of Project
-This project was created for Eric Wills' CIS 410 Game Programming class during Spring of 2022 at the University of Oregon.
+This project was created for Eric Wills' CIS 410 Game Programming class during the Spring of 2022 at the University of Oregon.
