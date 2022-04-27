@@ -12,8 +12,17 @@ public class exitButton : MonoBehaviour
         DontDestroyOnLoad(current);
     }
 
-    private void OnMouseDown(){
-        Debug.Log("clicked exit");
-        SceneManager.LoadScene("Main Scene");
+    //private void OnMouseDown(){
+        //Debug.Log("clicked exit");
+        //SceneManager.LoadScene("Main Scene");
+    //}
+    
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            Debug.Log("clicked exit");
+            SceneManager.LoadScene("Main Scene");
+        }
     }
 }
