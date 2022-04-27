@@ -7,8 +7,10 @@ public class RollaBallMove : MonoBehaviour
     //public CharacterController controller;
     private Rigidbody rb;
     
-    public float speed = 12f;
+    public int total = 0;
     
+    public float speed = 12f;
+        
     void Start()
     {
         rb = GetComponent<Rigidbody>();
@@ -30,6 +32,11 @@ public class RollaBallMove : MonoBehaviour
         if(other.gameObject.CompareTag("PickUp"))
         {
             other.gameObject.SetActive(false);
+            total = total + 1;
+        }
+        if (total == 2){
+            Debug.Log("here");
+            Var.x = true;
         }
     }
 }
