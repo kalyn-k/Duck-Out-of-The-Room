@@ -9,11 +9,6 @@ public class Door : MonoBehaviour
     void Start()
     {
         y.SetActive(false);
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
         if(Var.x == true){
             Debug.Log("made it");
             y.SetActive(true);

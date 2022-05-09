@@ -8,7 +8,7 @@ public class Var : MonoBehaviour
     public static bool x;
     void Start()
     {
-        x = false;
+        //x = false;
     }
 
     // Update is called once per frame

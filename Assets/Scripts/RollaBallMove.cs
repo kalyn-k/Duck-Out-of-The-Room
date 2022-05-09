@@ -35,8 +35,11 @@ public class RollaBallMove : MonoBehaviour
             total = total + 1;
         }
         if (total == 2){
-            Debug.Log("here");
+            Debug.Log("here1");
             Var.x = true;
+        }
+        else {
+            Var.x = false;
         }
     }
 }
