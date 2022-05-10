@@ -3,7 +3,7 @@
  **Authors: Brianna Vago, Melodie Collins, Kalyn Koyanagi**
 
 **Date created: April 24, 2022** <br/>
-**Last Edited: April 24, 2022** <br/>
+**Last Edited: May 9, 2022** <br/>
 **Software Dependencies: Unity 2021.2.14**
 
 # Purpose of Project
