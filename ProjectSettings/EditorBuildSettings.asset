@@ -11,4 +11,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/RollaBall.unity
     guid: 54a8238acb427415eb8df648040eb91a
+  - enabled: 1
+    path: Assets/Scenes/Room1.unity
+    guid: ec871241c8eec44639341c2252cc0e08
+  - enabled: 1
+    path: Assets/Scenes/Memory.unity
+    guid: 88c40e1aab79847228e9bb975489a118
+  - enabled: 1
+    path: Assets/Scenes/Jump.unity
+    guid: 3d616e8822fee4e348830a798c00435a
   m_configObjects: {}

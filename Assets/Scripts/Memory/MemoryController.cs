@@ -29,11 +29,39 @@ public class MemoryController : MonoBehaviour
 	}
 	
 	void Start() {
+		Cursor.visible = true;
 		GetButtons();
-		AddListeners();
+		//AddListeners();
 		AddGamePuzzles();
 		Shuffle (gamePuzzles);
 		gameGuesses = gamePuzzles.Count/2;
+	}
+	
+	void Update() {
+		if(Input.GetKeyDown(KeyCode.Alpha1)){
+			PickAPuzzle(0);
+		}
+		if(Input.GetKeyDown(KeyCode.Alpha2)){
+			PickAPuzzle(1);
+		}
+		if(Input.GetKeyDown(KeyCode.Alpha3)){
+			PickAPuzzle(2);
+		}
+		if(Input.GetKeyDown(KeyCode.Alpha4)){
+			PickAPuzzle(3);
+		}
+		if(Input.GetKeyDown(KeyCode.Alpha5)){
+			PickAPuzzle(4);
+		}
+		if(Input.GetKeyDown(KeyCode.Alpha6)){
+			PickAPuzzle(5);
+		}
+		if(Input.GetKeyDown(KeyCode.Alpha7)){
+			PickAPuzzle(6);
+		}
+		if(Input.GetKeyDown(KeyCode.Alpha8)){
+			PickAPuzzle(7);
+		}
 	}
 	
 	void GetButtons(){
@@ -59,18 +87,18 @@ public class MemoryController : MonoBehaviour
 		}
 	}
 	
-	void AddListeners() {
+	/*void AddListeners() {
 		foreach (UnityEngine.UI.Button btn in btns){
 			btn.onClick.AddListener(() => PickAPuzzle());
 		}
-	}
+	}*/
 	
-	public void PickAPuzzle() {
+	public void PickAPuzzle(int loc) {
 		if(!firstGuess) {
 			
 			firstGuess = true;
 			
-			firstGuessIndex = int.Parse(UnityEngine.EventSystems.EventSystem.current.currentSelectedGameObject.name);
+			firstGuessIndex = loc;
 			
 			firstGuessPuzzle = gamePuzzles[firstGuessIndex].name;
 			
@@ -79,7 +107,7 @@ public class MemoryController : MonoBehaviour
 		} else if (!secondGuess) {
 			secondGuess = true;
 			
-			secondGuessIndex = int.Parse(UnityEngine.EventSystems.EventSystem.current.currentSelectedGameObject.name);
+			secondGuessIndex = loc;
 			
 			secondGuessPuzzle = gamePuzzles[secondGuessIndex].name;
 			
@@ -120,6 +148,7 @@ public class MemoryController : MonoBehaviour
 		
 		if(countCorrectGuesses == gameGuesses) {
 			Debug.Log("done");
+			memVar.x = true;
 		}
 	}
 	

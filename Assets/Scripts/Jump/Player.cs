@@ -7,6 +7,8 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
 	public float movementSpeed = 10f;
+	
+	public GameObject player;
 
 	float movement = 0f;
 
@@ -30,6 +32,14 @@ public class Player : MonoBehaviour
     	Vector2 velocity = rb.velocity;
     	velocity.x = movement;
     	rb.velocity = velocity;
+		
+		if(player.transform.position.y < -12 ){
+			player.transform.position = new Vector3(0f,-1.5f,0f);
+		}
+		
+		if(player.transform.position.y >= 28.4 ){
+			jVar.x = true;
+		}
 
     }
 

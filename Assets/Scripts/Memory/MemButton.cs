@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Button : MonoBehaviour
+public class MemButton : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -13,6 +13,7 @@ public class Button : MonoBehaviour
     
     private void OnMouseDown(){
         Debug.Log("clicked");
-        SceneManager.LoadScene("RollaBall");
+        SceneManager.LoadScene("Memory");
     }
 }
+

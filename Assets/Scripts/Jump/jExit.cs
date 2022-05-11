@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class exitButton : MonoBehaviour
+public class jExit : MonoBehaviour
 {
-    public GameObject current;
+   public GameObject current;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,8 +21,7 @@ public class exitButton : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.R))
         {
-            Debug.Log("clicked exit");
-            SceneManager.LoadScene("Main Scene");
+            SceneManager.LoadScene("Room1");
         }
     }
 }
