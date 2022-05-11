@@ -9,10 +9,10 @@ public class Door : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        /*y.SetActive(false);
+        y.SetActive(false);
         if(Var.x == true){
             Debug.Log("made it");
             y.SetActive(true);
-        }*/
+        }
     }
 }
