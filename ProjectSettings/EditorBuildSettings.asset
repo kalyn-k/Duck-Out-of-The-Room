@@ -20,4 +20,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Jump.unity
     guid: 3d616e8822fee4e348830a798c00435a
+  - enabled: 1
+    path: Assets/Scenes/Room 2.unity
+    guid: f0155902f260a4e9e8cb14451f465acd
+  - enabled: 1
+    path: Assets/Scenes/TileSlide.unity
+    guid: daa3f292b594f41db9f381f2e06e4780
   m_configObjects: {}
