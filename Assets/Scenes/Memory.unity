@@ -682,6 +682,15 @@ MonoBehaviour:
   - {fileID: 21300000, guid: c00d5f0e92228441a88300eef6e864e5, type: 3}
   gamePuzzles: []
   btns: []
+  background:
+  - {fileID: 21300000, guid: cf282fe4969a0479384d8f895fc4b19d, type: 3}
+  - {fileID: 21300000, guid: dda84b4b9947e4e66901dfb7260f2929, type: 3}
+  - {fileID: 21300000, guid: 725a6523058ba49fdbc9fad78bee7807, type: 3}
+  - {fileID: 21300000, guid: c21c86bbda9ad44338c0d0c7cce275af, type: 3}
+  - {fileID: 21300000, guid: a4de2ce69dfae4aa085e7338c23dd017, type: 3}
+  - {fileID: 21300000, guid: d3e35667371934df298786d2114ba80a, type: 3}
+  - {fileID: 21300000, guid: 98b0c39c6e4224d40bdf10645d922ae3, type: 3}
+  - {fileID: 21300000, guid: d545b9aff74e9421688418bee415f236, type: 3}
 --- !u!114 &1589243469
 MonoBehaviour:
   m_ObjectHideFlags: 0

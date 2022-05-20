@@ -14,7 +14,9 @@ public class MemoryController : MonoBehaviour
 	public List<Sprite> gamePuzzles = new List<Sprite>();
 	
 	public List<UnityEngine.UI.Button> btns = new List<UnityEngine.UI.Button>();
-	
+
+	public List<Sprite> background = new List<Sprite>();
+
 	private bool firstGuess, secondGuess;
 	
 	private int countGuesses;
@@ -69,7 +71,7 @@ public class MemoryController : MonoBehaviour
 		
 		for(int i = 0; i < objects.Length; i++) {
 			btns.Add(objects[i].GetComponent<UnityEngine.UI.Button>());
-			btns[i].image.sprite = Background;
+			btns[i].image.sprite = background[i];
 		}
 	}
 	
@@ -134,8 +136,8 @@ public class MemoryController : MonoBehaviour
 			
 			CheckIfTheGameIsFinished();
 		} else {
-			btns[firstGuessIndex].image.sprite = Background;
-			btns[secondGuessIndex].image.sprite = Background;
+			btns[firstGuessIndex].image.sprite = background[firstGuessIndex];
+			btns[secondGuessIndex].image.sprite = background[secondGuessIndex];
 		}
 		
 		yield return new WaitForSeconds(0.3f);
