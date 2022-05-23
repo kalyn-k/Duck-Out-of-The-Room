@@ -7,6 +7,9 @@ TagManager:
   - PuzzleButton
   - PickUp
   - Portal
+  - Piece
+  - Environment
+  - Checkpoint
   layers:
   - Default
   - TransparentFX
