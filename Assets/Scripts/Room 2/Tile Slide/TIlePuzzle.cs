@@ -10,33 +10,30 @@ public class TIlePuzzle : MonoBehaviour
 
     public Sprite[] sprites;
 
-    public bool done;
-
     void Start()
     {
         Init();
-        Debug.Log(boxes[1, 0].GetComponent<SpriteRenderer>().sprite.name);
     }
 
     void FixedUpdate()
     {
-        if (boxes[0, 2].GetComponent<SpriteRenderer>().sprite.name == "0")
+        if (boxes[0, 2] != null && boxes[0, 2].GetComponent<SpriteRenderer>().sprite.name == "0")
         {
-            if (boxes[1, 2].GetComponent<SpriteRenderer>().sprite.name == "1")
+            if (boxes[1, 2] != null && boxes[1, 2].GetComponent<SpriteRenderer>().sprite.name == "1")
             {
-                if (boxes[2, 2].GetComponent<SpriteRenderer>().sprite.name == "2")
+                if (boxes[2, 2] != null && boxes[2, 2].GetComponent<SpriteRenderer>().sprite.name == "2")
                 {
-                    if (boxes[0, 1].GetComponent<SpriteRenderer>().sprite.name == "3")
+                    if (boxes[0, 1] != null && boxes[0, 1].GetComponent<SpriteRenderer>().sprite.name == "3")
                     {
-                        if (boxes[1, 1].GetComponent<SpriteRenderer>().sprite.name == "4")
+                        if (boxes[1, 1] != null && boxes[1, 1].GetComponent<SpriteRenderer>().sprite.name == "4")
                         {
-                            if (boxes[2, 1].GetComponent<SpriteRenderer>().sprite.name == "5")
+                            if (boxes[2, 1] != null && boxes[2, 1].GetComponent<SpriteRenderer>().sprite.name == "5")
                             {
-                                if (boxes[0, 0].GetComponent<SpriteRenderer>().sprite.name == "6")
+                                if (boxes[0, 0] != null && boxes[0, 0].GetComponent<SpriteRenderer>().sprite.name == "6")
                                 {
-                                    if (boxes[1, 0].GetComponent<SpriteRenderer>().sprite.name == "7")
+                                    if (boxes[1, 0] != null && boxes[1, 0].GetComponent<SpriteRenderer>().sprite.name == "7")
                                     {
-                                        done = true;
+                                        TileVar.y = true;
                                     }
                                 }
                             }
@@ -79,7 +76,6 @@ public class TIlePuzzle : MonoBehaviour
         // update pos 2 boxes
         from.UpdatePos(x + dx, y + dy);
         target.UpdatePos(x, y);
-        Debug.Log(boxes[1, 0].GetComponent<SpriteRenderer>().sprite.name);
     }
 
 
