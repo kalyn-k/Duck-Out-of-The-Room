@@ -56,6 +56,7 @@ public class MovementPiece : MonoBehaviour
             GetComponent<BoxCollider2D>().enabled = false;
             transform.position = other.gameObject.transform.position;
             pieceStatus = "locked";
+            JigExit.completed += 1;
             checkPlacement = "n";
         }
     }

@@ -10,13 +10,19 @@ public class doorController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        d1.SetActive(true);
+        //d1.SetActive(true);
+        d1.SetActive(false);
         d2.SetActive(true);
         //portal.SetActive(false);
-        if (TileVar.y == true)
+
+        /*if (TileVar.y == true)
         {
-            Debug.Log("made it");
             d1.SetActive(false);
+        }*/
+        if (JigVar.x == true)
+        {
+            d1.SetActive(false);
+            d2.SetActive(false);
         }
     }
 }
