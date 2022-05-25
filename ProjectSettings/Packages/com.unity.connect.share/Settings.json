@@ -16,7 +16,7 @@
             {
                 "type": "System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
                 "key": "buildOutputDirList",
-                "value": "{\"m_Value\":\"/Users/briannavago/Documents/Duck-Out-of-The-Room/Alpha/A-build;;;;;;;;;\"}"
+                "value": "{\"m_Value\":\"/Users/briannavago/Documents/Build1;/Users/briannavago/Documents/Duck-Out-of-The-Room/Alpha/A-build;;;;;;;;\"}"
             }
         ]
     }

@@ -12,6 +12,10 @@ public class PlayerLocator : MonoBehaviour
         {
             player.transform.position = new Vector3(6.54f, 1.5f, -7.84f);
         }
+        else if(BirdVar.newhere == true)
+        {
+            player.transform.position = new Vector3(-8.36f, 1.5f, -3.576f);
+        }
         else
         {
             player.transform.position = new Vector3(5f, 1.5f, 5f);

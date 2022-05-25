@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CollisionPiece : MonoBehaviour
 { 
@@ -10,7 +11,7 @@ public class CollisionPiece : MonoBehaviour
     {
         if(other.gameObject.tag == "Environment")
         {
-            Debug.Log("go back to room");
+            SceneManager.LoadScene("Room 2");
         }
         else if(other.gameObject.tag == "Checkpoint")
         {
