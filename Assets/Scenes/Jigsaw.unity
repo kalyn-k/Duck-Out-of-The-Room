@@ -1513,7 +1513,7 @@ GameObject:
   - component: {fileID: 217667607}
   - component: {fileID: 217667611}
   - component: {fileID: 217667613}
-  - component: {fileID: 217667612}
+  - component: {fileID: 217667614}
   m_Layer: 0
   m_Name: P1
   m_TagString: Piece
@@ -1677,23 +1677,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.69, y: 2.23}
   m_EdgeRadius: 0
---- !u!114 &217667612
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 217667606}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 76dc1b32732f841f09b3065bdc4d3bfb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gridSize: 1
-  pieceStatus: 
-  checkPlacement: 
-  placePiece: 32
-  dropPiece: 9
 --- !u!50 &217667613
 Rigidbody2D:
   serializedVersion: 4
@@ -1715,6 +1698,23 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &217667614
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 217667606}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76dc1b32732f841f09b3065bdc4d3bfb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gridSize: 1
+  pieceStatus: idle
+  checkPlacement: 
+  placePiece: 32
+  dropPiece: 9
 --- !u!1 &235916329
 GameObject:
   m_ObjectHideFlags: 0

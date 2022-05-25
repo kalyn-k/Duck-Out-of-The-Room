@@ -62,7 +62,10 @@ public class MovementPiece : MonoBehaviour
     }
     void OnMouseDown()
     {
-        pieceStatus = "pickedup";
-        checkPlacement = "n";
+        if (pieceStatus == "idle")
+        {
+            pieceStatus = "pickedup";
+            checkPlacement = "n";
+        }
     }
 }

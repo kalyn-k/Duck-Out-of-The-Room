@@ -5,15 +5,10 @@ using UnityEngine;
 public class JigVar : MonoBehaviour
 {
     public static bool x;
-    // Start is called before the first frame update
+    public static bool here;
+
     void Start()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        here = true;
     }
 }

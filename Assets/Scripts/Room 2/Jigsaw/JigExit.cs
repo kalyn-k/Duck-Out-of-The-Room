@@ -15,8 +15,10 @@ public class JigExit : MonoBehaviour
 
     void Update()
     {
-        if (completed == 36)
+        Debug.Log(completed);
+        if (completed == 33)
         {
+            Debug.Log("here");
             JigVar.x = true;
         }
         if (Input.GetKeyDown(KeyCode.R))

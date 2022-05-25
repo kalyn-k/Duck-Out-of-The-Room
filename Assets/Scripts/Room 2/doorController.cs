@@ -12,17 +12,18 @@ public class doorController : MonoBehaviour
     {
         //d1.SetActive(true);
         d1.SetActive(false);
-        d2.SetActive(true);
+        //d2.SetActive(true);
+        d2.SetActive(false);
         //portal.SetActive(false);
 
         /*if (TileVar.y == true)
         {
             d1.SetActive(false);
-        }*/
+        }
         if (JigVar.x == true)
         {
             d1.SetActive(false);
             d2.SetActive(false);
-        }
+        }*/
     }
 }
