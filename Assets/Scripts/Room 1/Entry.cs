@@ -10,7 +10,7 @@ public class Entry : MonoBehaviour
     void Start()
     {
         y.SetActive(false);
-        if (memVar.x == true)
+        if (jVar.x == true)
         {
             Debug.Log("made it");
             y.SetActive(true);

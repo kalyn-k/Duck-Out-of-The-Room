@@ -106,7 +106,7 @@ public class MemoryController : MonoBehaviour
 			
 			btns[firstGuessIndex].image.sprite = gamePuzzles[firstGuessIndex];
 			
-		} else if (!secondGuess) {
+		} else if (!secondGuess && firstGuessIndex != loc) {
 			secondGuess = true;
 			
 			secondGuessIndex = loc;
