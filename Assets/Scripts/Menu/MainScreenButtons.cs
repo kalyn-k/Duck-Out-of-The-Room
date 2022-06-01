@@ -27,6 +27,7 @@ public class MainScreenButtons : MonoBehaviour
     void LevelPress()
     {
         Debug.Log("L press");
+		butTot.gameObject.SetActive(true);
         but1.gameObject.SetActive(true);
         but2.gameObject.SetActive(true);
         but3.gameObject.SetActive(true);

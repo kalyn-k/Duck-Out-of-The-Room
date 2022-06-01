@@ -14,7 +14,7 @@ public class AppearScript : MonoBehaviour
         obj1.SetActive(true);
         obj2.SetActive(false);
         obj3.SetActive(false);
-        portal.SetActive(false);
+        portal.SetActive(true);
     }
 
 }
