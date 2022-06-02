@@ -10,6 +10,8 @@ public class MemoryController : MonoBehaviour
 	private Sprite Background;
 	
 	public Sprite[] puzzles;
+
+	public AudioSource noise;
 	
 	public List<Sprite> gamePuzzles = new List<Sprite>();
 	
@@ -63,6 +65,7 @@ public class MemoryController : MonoBehaviour
 		}
 		if(Input.GetKeyDown(KeyCode.Alpha8)){
 			PickAPuzzle(7);
+			
 		}
 	}
 	
@@ -97,7 +100,8 @@ public class MemoryController : MonoBehaviour
 	
 	public void PickAPuzzle(int loc) {
 		if(!firstGuess) {
-			
+			noise.Play();
+
 			firstGuess = true;
 			
 			firstGuessIndex = loc;
@@ -107,6 +111,7 @@ public class MemoryController : MonoBehaviour
 			btns[firstGuessIndex].image.sprite = gamePuzzles[firstGuessIndex];
 			
 		} else if (!secondGuess && firstGuessIndex != loc) {
+			noise.Play();
 			secondGuess = true;
 			
 			secondGuessIndex = loc;

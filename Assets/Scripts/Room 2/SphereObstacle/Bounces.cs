@@ -6,7 +6,7 @@ public class Bounces : MonoBehaviour
 {
     public float ySpeed;
     public float yTarget;
-    //public GameObject soundBounce;
+    public AudioSource noise;
 
     // Update is called once per frame
     void Update()
@@ -16,7 +16,7 @@ public class Bounces : MonoBehaviour
 
         if (Input.GetKeyDown("space"))
         {
-            //Instantiate(soundBounce, transform.position, transform.rotation);
+            noise.Play();
             ySpeed = 0.1f;
         }
     }

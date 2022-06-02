@@ -10,6 +10,8 @@ public class TIlePuzzle : MonoBehaviour
 
     public Sprite[] sprites;
 
+    public AudioSource noise;
+
     void Start()
     {
         Init();
@@ -71,6 +73,7 @@ public class TIlePuzzle : MonoBehaviour
         var from = boxes[x, y];
         var target = boxes[x + dx, y + dy];
         // swap the 2 boxes
+        noise.Play();
         boxes[x, y] = target;
         boxes[x + dx, y + dy] = from;
         // update pos 2 boxes

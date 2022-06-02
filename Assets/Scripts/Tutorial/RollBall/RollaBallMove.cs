@@ -6,6 +6,8 @@ public class RollaBallMove : MonoBehaviour
 {
     //public CharacterController controller;
     private Rigidbody rb;
+
+    public AudioSource hitThing;
     
     public int total = 0;
     
@@ -31,6 +33,7 @@ public class RollaBallMove : MonoBehaviour
     {
         if(other.gameObject.CompareTag("PickUp"))
         {
+            hitThing.Play();
             other.gameObject.SetActive(false);
             total = total + 1;
         }

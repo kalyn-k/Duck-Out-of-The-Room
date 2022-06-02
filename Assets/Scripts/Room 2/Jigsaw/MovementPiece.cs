@@ -11,6 +11,8 @@ public class MovementPiece : MonoBehaviour
 
     public string checkPlacement = "";
 
+    public AudioSource noise;
+
     public KeyCode placePiece;
     public KeyCode dropPiece;
 
@@ -45,6 +47,7 @@ public class MovementPiece : MonoBehaviour
         if (Input.GetKeyDown(dropPiece))
         {
             pieceStatus = "idle";
+            noise.Play();
         }
 
     }
@@ -65,6 +68,7 @@ public class MovementPiece : MonoBehaviour
         if (pieceStatus == "idle")
         {
             pieceStatus = "pickedup";
+            noise.Play();
             checkPlacement = "n";
         }
     }
